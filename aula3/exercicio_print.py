@@ -50,6 +50,11 @@
 # print(f"multiplicação: {multiplicacao}")
 # print(f"divisão: {divisao}")
 
+#exercicio8
+# idade = int(input("digite sua idade: "))
+# dias_vividos = idade * 365
+# print(f"voce viveu {dias_vividos} dias")
+
 #exercicio9
 # numero1 =int(input("digite a largura:"))
 # numero2 = int(input("digite a altura:"))
