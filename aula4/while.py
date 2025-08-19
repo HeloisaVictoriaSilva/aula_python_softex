@@ -4,6 +4,7 @@
 #  while  condição:
 #     bloco de código
 # o python verifica se a condição for true, executa o bloco. Se for false, para o laço
+#break = para o laço
 
 # contador = 0
 
