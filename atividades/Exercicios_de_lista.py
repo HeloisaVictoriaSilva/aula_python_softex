@@ -62,7 +62,7 @@ contador=0
 soma1=0
 for aluno in notas:
     for nota in aluno:
-        contador +=1
-        soma1 = soma1 + nota
+         contador +=1
+         soma1 = soma1 + nota
     media = soma1 / contador
-print(soma1)
+print(media)

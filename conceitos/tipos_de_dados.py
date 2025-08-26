@@ -1,0 +1,8 @@
+#str()
+#int()
+#float()
+#bool()
+#list()
+#tuple()
+#set()
+#dict()
