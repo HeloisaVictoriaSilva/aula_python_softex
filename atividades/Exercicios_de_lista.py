@@ -57,12 +57,13 @@ notas = []
 notas.append(nota_aluno1)
 notas.append(nota_aluno2)
 
-#organizar a lógica esta errada
-contador=0
-soma1=0
 for aluno in notas:
+    contador=0
+    soma1=0
     for nota in aluno:
          contador +=1
          soma1 = soma1 + nota
     media = soma1 / contador
-print(media)
+    print(media)
+
+#11
