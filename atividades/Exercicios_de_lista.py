@@ -64,6 +64,18 @@ for aluno in notas:
          contador +=1
          soma1 = soma1 + nota
     media = soma1 / contador
-    print(media)
 
+    print(media)
 #11
+tabuleiro_xadrez = [[] for x in range(8)]
+tabuleiro_xadrez[0] = ["tor", "cav", "bis", "rai", "rei","bis", "cav", "tor"]
+tabuleiro_xadrez[1] = [["pea"] * 8 ]
+tabuleiro_xadrez[2] = [["[]"] * 8 ]
+tabuleiro_xadrez[3] = [["[]"] * 8 ]
+tabuleiro_xadrez[4] = [["[]"] * 8 ]
+tabuleiro_xadrez[5] = [["[]"] * 8 ]
+tabuleiro_xadrez[7] = ["tor", "cav", "bis", "rai", "rei","bis", "cav", "tor"]
+tabuleiro_xadrez[6] = [["pea"] * 8]
+
+for linha in tabuleiro_xadrez:
+    print(linha)
