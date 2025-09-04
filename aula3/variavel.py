@@ -4,6 +4,7 @@
 #print(type(true)) #boolean
 #print(type(false)) #bolean
 #print(type(str(22))) #str para o dado se tornar string
+#NOME = "Ana" #constante
 
 
 #input("informe o seu nome:") #input é uma função que recebe um valor ao dado do usuário
