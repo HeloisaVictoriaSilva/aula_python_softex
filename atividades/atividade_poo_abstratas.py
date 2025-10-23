@@ -68,7 +68,7 @@ kiwid= Carro()
 print(kiwid.mover())
 
 # A classe carro herda uma classe e metodos abstrados então 
-# como não foi implementadon todos od métodod abstrados, 
+# como não foi implementadon todos od métodod abstratos, 
 # enquanto todos os métodos abstratos não forem instanciados 
 # a classe não pode ser implementada
 
