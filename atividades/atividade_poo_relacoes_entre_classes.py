@@ -95,6 +95,8 @@ class Motor:
         self.potencia = potencia
     def ligar(self):
         print(f"O motor está ligado, potencia: {self.potencia}")
+    def __del__(self):
+        print("O motor foi destruido")
 
 class Carro:
     def __init__(self, marcar: str, potencia_motor: int):
@@ -103,7 +105,34 @@ class Carro:
     def desligar_carro(self):
         print(f"Ligando o carro da marcar: {self.marcar}")
         self.motor.ligar()
+    def __del__(self):
+        print("O carro foi destruido")
 
 carro1= Carro("Kwid", 71)
 carro1.desligar_carro()
-#Se o Carro deixar de existir, o Motor também deixa. Mostre isso criando e depois apagando o objeto
+
+del carro1
+
+#6
+class Cozinha:
+    def __init__(self, fogao_modelo):
+        self.fogao_modelo= fogao_modelo
+    def __str__(self):
+        return f"O modelo do fogão da cozinha é: {self.fogao_modelo}"
+
+class Banheiro:
+    def __init__(self, disponivel):
+        self.disponivel= disponivel
+    def __str__(self):
+        return f"O banheiro está disponivel"
+class Casa:
+    def __init__(self, endereco_casa, fogao_modelo1, banheiro_disponivel):
+        self.endereco_casa = endereco_casa
+        self.cozinha= Cozinha(fogao_modelo1)
+        self.banheiro= Banheiro(banheiro_disponivel)
+    def criar_casa(self):
+        print(f"Criando casa com fogão: {self.cozinha}, com banheiro: {self.banheiro}")
+
+casa1 = Casa("Rua da guia", "Bramtemp", "disponivel")
+
+print(casa1.criar_casa())
